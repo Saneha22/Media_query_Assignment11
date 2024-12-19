@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media Query</title>
+    <style>
+        .images {
+            width: 25em;
+            height: 25em;
+            display: grid;
+            column-gap: 20px;
+            grid-template-columns: repeat(3 , 3fr);
+        }
+        .second_img{
+            grid-row: 2/1;
+        }
+        .third_img {
+           grid-row : 3/1;
+        }
+        @media screen AND (max-width: 800px) {
+            .third_img{
+                grid-row: 2/3;
+            }
+        }
+
+        @media screen AND (max-width: 500px) {
+            .second_img {
+                grid-row : 2/3;
+            }
+            .third_img{
+                grid-row : 3/4;
+            }
+        }
+       
+    
+    </style>
+</head>
+<body>
+    <div class="images">
+    <img class="first_img" src="https://fastly.picsum.photos/id/562/200/300.jpg?hmac=hpXw5M2jimIlA8mbmOszsyQ8e8ZBdyiCeb9T-8STe44">
+    <img class="second_img" src="https://fastly.picsum.photos/id/562/200/300.jpg?hmac=hpXw5M2jimIlA8mbmOszsyQ8e8ZBdyiCeb9T-8STe44">
+    <img class="third_img" src="https://fastly.picsum.photos/id/562/200/300.jpg?hmac=hpXw5M2jimIlA8mbmOszsyQ8e8ZBdyiCeb9T-8STe44">
+    </div>
+</body>
+</html>

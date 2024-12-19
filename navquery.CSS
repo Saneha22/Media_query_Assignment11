@@ -1,0 +1,39 @@
+.bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+    background-color: black;
+    font-weight: bold;
+    
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.items{
+    text-decoration: none;
+    color: white;
+}
+.nav-items{
+    list-style-type: none;
+    display: flex;
+    gap: 200px;
+    
+}
+
+@media screen AND (max-width: 768px) {
+    .nav-items{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 5px;
+    }
+    .bar{
+        background-color: gray;
+        height: 200px;   
+    }
+    
+}
